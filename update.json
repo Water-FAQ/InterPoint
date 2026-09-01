@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "build": 30,
+  "url": "https://github.com/Water-FAQ/InterPoint/releases/latest/download/InterPoint.zip",
+  "download_url": "https://github.com/Water-FAQ/InterPoint/releases/latest/download/InterPoint.zip",
+  "release_url": "https://github.com/Water-FAQ/InterPoint/releases/tag/v1.0.0",
+  "file_name": "InterPoint.zip",
+  "sha256": "16ca0fa4bb02407da1b854610cdad53571e044630804c051338aa8495b15a2e8",
+  "size": 9160098,
+  "published_at": "2026-09-01",
+  "notes": [
+    "Линейная, квадратичная и билинейная интерполяция и экстраполяция.",
+    "Интерактивный график с масштабированием и перемещением.",
+    "Подробный экспорт расчёта и графика в Excel.",
+    "Автоматическая и ручная проверка обновлений с контролем SHA-256."
+  ]
+}

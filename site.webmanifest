@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "InterPoint — калькулятор интерполяции",
+  "short_name": "InterPoint",
+  "description": "Сайт бесплатного калькулятора интерполяции для Windows",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#151b27",
+  "theme_color": "#2789f7",
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"}
+  ]
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="InterPoint — бесплатный калькулятор линейной, квадратичной и билинейной интерполяции для Windows с графиком и экспортом расчёта в Excel.">
+  <meta name="theme-color" content="#eef5ff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#151b27" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="InterPoint — калькулятор интерполяции">
+  <meta property="og:description" content="Линейная, квадратичная и билинейная интерполяция, наглядный график и подробный отчёт Excel.">
+  <meta property="og:url" content="https://water-faq.github.io/InterPoint/">
+  <meta property="og:image" content="https://water-faq.github.io/InterPoint/assets/images/social-preview.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css?v=1">
+  <title>InterPoint — калькулятор интерполяции</title>
+</head>
+<body>
+  <header class="site-header"><div class="wrap top">
+    <a class="logo interpoint-logo" href="#" aria-label="InterPoint — наверх"><img src="assets/icons/icon-192.png" alt=""><span>InterPoint</span></a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-navigation"><svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <nav id="site-navigation" class="nav" aria-label="Основная навигация"><a href="index.html" aria-current="page">Главная</a><a href="#features">Возможности</a><a href="#start">Начало работы</a><a href="faq.html">FAQ</a><a href="changelog.html">Версии</a><a href="terms.html">Условия</a></nav>
+  </div></header>
+
+  <main class="wrap">
+    <div class="hero"><div class="hero-content">
+      <div class="eyebrow">Бесплатно · Windows 10 и новее</div>
+      <h1>Интерполяция без лишних действий</h1>
+      <p class="lead">Введите исходные точки, выберите искомую координату — InterPoint рассчитает результат, покажет график и подготовит подробный отчёт Excel.</p>
+
+      <div class="calc-demo interpoint-demo" aria-label="Демонстрация InterPoint">
+        <div class="demo-toolbar"><span class="demo-app"><img src="assets/icons/icon-32.png" alt="">InterPoint</span><div class="demo-tabs" role="tablist" aria-label="Режим демонстрации"><button type="button" role="tab" aria-selected="true" data-interpoint-mode="linear">Линейная</button><button type="button" role="tab" aria-selected="false" data-interpoint-mode="quadratic">Квадратичная</button><button type="button" role="tab" aria-selected="false" data-interpoint-mode="bilinear">Билинейная</button></div></div>
+        <div class="demo-body">
+          <div class="demo-values" data-interpoint-values><span>X₁ <b>0</b></span><span>Y₁ <b>10</b></span><span>X₂ <b>20</b></span><span>Y₂ <b>50</b></span><span class="demo-target">X <b>15</b></span><span class="demo-result-value">Y <b>40</b></span></div>
+          <svg class="demo-chart" data-interpoint-chart viewBox="0 0 430 190" role="img" aria-label="График линейной интерполяции"><path class="chart-grid" d="M45 22V160M45 160H410M45 125H410M45 90H410M45 55H410M135 22V160M225 22V160M315 22V160M405 22V160"/><path class="chart-line" d="M58 147L392 35"/><circle cx="58" cy="147" r="6"/><circle cx="392" cy="35" r="6"/><circle class="chart-target" cx="309" cy="63" r="7"/><text x="62" y="141">(0; 10)</text><text x="319" y="82">(15; 40)</text><text x="326" y="29">(20; 50)</text></svg>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <div class="download-group"><a id="download" class="button" href="https://github.com/Water-FAQ/InterPoint/releases/latest/download/InterPoint.zip">Скачать InterPoint</a><p id="version" class="meta">Последняя версия: v1.0.0</p></div>
+        <a class="button secondary" href="changelog.html">Все версии</a>
+        <a class="button secondary virustotal-button" href="https://www.virustotal.com/gui/file/0685c42fb659fcc0776ff8410918f7ebf885d155453a8ee5a3f4abb570f7c36a?nocache=1" target="_blank" rel="noopener noreferrer">VirusTotal</a>
+      </div>
+    </div></div>
+
+    <section id="features"><h2>Возможности</h2><div class="grid">
+      <article class="card"><h3>Линейная интерполяция</h3><p>Прямой и обратный расчёт по двум точкам с уравнением прямой.</p></article>
+      <article class="card"><h3>Квадратичная интерполяция</h3><p>Полином Лагранжа по трём точкам с выводом коэффициентов и уравнения.</p></article>
+      <article class="card"><h3>Билинейная интерполяция</h3><p>Расчёт внутри прямоугольной сетки по четырём значениям функции.</p></article>
+      <article class="card"><h3>Интерактивный график</h3><p>Масштабирование колесом, перемещение мышью и автоматические подписи точек.</p></article>
+      <article class="card"><h3>Подробный Excel-отчёт</h3><p>Исходные данные, формулы, промежуточные вычисления, проверки и график в одном файле.</p></article>
+      <article class="card"><h3>Контроль результата</h3><p>Определение интерполяции или экстраполяции и предупреждения для сомнительных случаев.</p></article>
+      <article class="card"><h3>Инженерная точность</h3><p>Вычисления выполняются с высокой внутренней точностью, вывод — до шести знаков.</p></article>
+      <article class="card"><h3>Удобный ввод</h3><p>Точка и запятая как десятичный разделитель, вставка из буфера и горячие клавиши.</p></article>
+      <article class="card"><h3>Портативная работа</h3><p>Установка не требуется: распакуйте архив и запустите единственный EXE.</p></article>
+    </div></section>
+
+    <section id="start"><h2>Начало работы</h2><div class="info">
+      <div class="card steps"><div class="step"><span>Скачайте архив последней версии.</span></div><div class="step"><span>Распакуйте его в удобную папку.</span></div><div class="step"><span>Запустите <code>InterPoint.exe</code> — установка не требуется.</span></div></div>
+      <div class="card"><h3>Системные требования</h3><p>Windows 10 или новее, 64-разрядная система.</p></div>
+    </div></section>
+
+    <section id="privacy"><h2>Расчёты остаются на компьютере</h2><div class="card"><p>InterPoint выполняет вычисления локально, не передаёт исходные данные или результаты разработчику и не собирает телеметрию. Интернет используется только для проверки официального манифеста обновлений, если автоматическая проверка включена.</p></div></section>
+
+    <section id="more"><h2>Дополнительная информация</h2><div class="link-grid">
+      <article class="card"><h3><a href="faq.html">Часто задаваемые вопросы</a></h3><p>Методы, график, экспорт Excel и решение типичных вопросов.</p></article>
+      <article class="card"><h3><a href="changelog.html">Что нового</a></h3><p>История выпусков InterPoint и основные изменения.</p></article>
+      <article class="card"><h3><a href="terms.html">Условия использования</a></h3><p>Правила бесплатного использования и ограничение ответственности.</p></article>
+      <article class="card"><h3><a href="uninstall.html">Удаление программы</a></h3><p>Как полностью удалить InterPoint и сохранённые настройки.</p></article>
+    </div></section>
+
+    <section id="feedback"><h2>Обратная связь</h2><div class="card"><p>Сообщить об ошибке, предложить улучшение или задать вопрос можно по электронной почте либо через GitHub Issues.</p></div><div class="feedback-actions"><a class="button" href="mailto:waterfaq@ya.ru">Написать по электронной почте</a><a class="button secondary" href="https://github.com/Water-FAQ/InterPoint/issues/new?template=bug_report.yml">Сообщить об ошибке на GitHub</a><a class="button secondary" href="https://github.com/Water-FAQ/InterPoint/issues/new?template=feature_request.yml">Предложить улучшение на GitHub</a></div></section>
+  </main>
+  <footer class="wrap"><span>© 2026 WaterFAQ · InterPoint распространяется бесплатно</span><nav><a href="index.html">Главная</a><a href="faq.html">FAQ</a><a href="changelog.html">Версии</a><a href="terms.html">Условия</a><a href="uninstall.html">Удаление</a><a href="mailto:waterfaq@ya.ru">waterfaq@ya.ru</a><a href="https://github.com/Water-FAQ/InterPoint">GitHub</a></nav></footer>
+  <button class="back-to-top" type="button" aria-label="Наверх" title="Наверх" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l7-7 7 7M12 4v16"/></svg></button>
+  <script>fetch('update.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(m=>{if(m.version)document.getElementById('version').textContent='Последняя версия: v'+m.version;if(m.download_url)document.getElementById('download').href=m.download_url}).catch(()=>{});</script>
+  <script src="assets/js/site.js?v=1"></script>
+</body>
+</html>
