@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Часто задаваемые вопросы
+    url: https://water-faq.github.io/InterPoint/faq.html
+    about: Перед созданием обращения проверьте ответы на типичные вопросы.
+  - name: Вопрос по использованию
+    url: mailto:waterfaq@ya.ru
+    about: Напишите разработчику по электронной почте.
