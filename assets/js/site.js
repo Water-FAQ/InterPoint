@@ -202,17 +202,17 @@
       linear: {
         label: 'График линейной интерполяции',
         values: [['X₁', '0'], ['Y₁', '10'], ['X₂', '20'], ['Y₂', '50'], ['X', '15', 'demo-target'], ['Y', '40', 'demo-result-value']],
-        chart: `${grid}<path class="chart-line" d="M58 147L392 35"/><circle cx="58" cy="147" r="6"/><circle cx="392" cy="35" r="6"/><circle class="chart-target" cx="309" cy="63" r="7"/><text x="62" y="141">(0; 10)</text><text x="319" y="82">(15; 40)</text><text x="326" y="29">(20; 50)</text>`
+        chart: `${grid}<path class="chart-line" d="M58 147L392 35"/><circle cx="58" cy="147" r="6"/><circle cx="392" cy="35" r="6"/><circle class="chart-target" cx="309" cy="63" r="7"/><text x="68" y="166">(0; 10)</text><text x="319" y="84">(15; 40)</text><text x="326" y="24">(20; 50)</text>`
       },
       quadratic: {
         label: 'График квадратичной интерполяции',
         values: [['X₁', '0'], ['Y₁', '10'], ['X₂', '10'], ['Y₂', '20'], ['X₃', '20'], ['Y₃', '50'], ['X', '15', 'demo-target'], ['Y', '32,5', 'demo-result-value']],
-        chart: `${grid}<path class="chart-line" d="M58 147Q224 136 392 35"/><circle cx="58" cy="147" r="6"/><circle cx="225" cy="119" r="6"/><circle cx="392" cy="35" r="6"/><circle class="chart-target" cx="309" cy="84" r="7"/><text x="64" y="140">(0; 10)</text><text x="234" y="114">(10; 20)</text><text x="315" y="102">(15; 32,5)</text><text x="325" y="29">(20; 50)</text>`
+        chart: `${grid}<path class="chart-line" d="M58 147Q225 147 392 35"/><circle cx="58" cy="147" r="6"/><circle cx="225" cy="119" r="6"/><circle cx="392" cy="35" r="6"/><circle class="chart-target" cx="309" cy="84" r="7"/><text x="68" y="166">(0; 10)</text><text x="235" y="137">(10; 20)</text><text x="319" y="106">(15; 32,5)</text><text x="326" y="24">(20; 50)</text>`
       },
       bilinear: {
         label: 'Схема билинейной интерполяции',
         values: [['X₁', '0'], ['X₂', '20'], ['Y₁', '0'], ['Y₂', '10'], ['X', '15', 'demo-target'], ['Y', '6', 'demo-target'], ['P', '31', 'demo-result-value']],
-        chart: `${grid}<polygon class="chart-surface" points="78,142 360,142 360,42 78,42"/><path class="chart-line chart-line-thin" d="M78 142L360 42M78 42L360 142"/><circle cx="78" cy="142" r="6"/><circle cx="360" cy="142" r="6"/><circle cx="78" cy="42" r="6"/><circle cx="360" cy="42" r="6"/><circle class="chart-target" cx="290" cy="82" r="7"/><text x="83" y="136">Q₁₁ = 10</text><text x="287" y="136">Q₂₁ = 30</text><text x="83" y="36">Q₁₂ = 20</text><text x="287" y="36">Q₂₂ = 40</text><text x="300" y="101">P(15; 6) = 31</text>`
+        chart: `${grid}<polygon class="chart-surface" points="78,142 360,142 360,42 78,42"/><path class="chart-line chart-line-thin" d="M78 142L360 42M78 42L360 142"/><circle cx="78" cy="142" r="6"/><circle cx="360" cy="142" r="6"/><circle cx="78" cy="42" r="6"/><circle cx="360" cy="42" r="6"/><circle class="chart-target" cx="290" cy="82" r="7"/><text x="88" y="163">Q₁₁ = 10</text><text x="292" y="163">Q₂₁ = 30</text><text x="88" y="27">Q₁₂ = 20</text><text x="292" y="27">Q₂₂ = 40</text><text x="301" y="101">P(15; 6) = 31</text>`
       }
     };
 
