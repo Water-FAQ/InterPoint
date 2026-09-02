@@ -169,7 +169,14 @@ code {
 .demo-chart .chart-surface { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 3; opacity: .8; }
 .demo-chart circle { fill: var(--panel); stroke: var(--accent); stroke-width: 4; }
 .demo-chart .chart-target { fill: #4bb782; stroke: #fff; }
-.demo-chart text { fill: var(--muted); font: 13px "Segoe UI", sans-serif; }
+.demo-chart text {
+  fill: var(--muted);
+  stroke: var(--panel);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+  font: 13px "Segoe UI", sans-serif;
+}
 
 .hero-actions {
   display: flex;
